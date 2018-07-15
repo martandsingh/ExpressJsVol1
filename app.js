@@ -16,7 +16,14 @@
      dept : "I.T"
  }
 
+function myMiddleware(req, res, next){
+    console.log('middleware running..')
+}
+
+ //app.use(myMiddleware) // using middleware uncomment it if you want to use middleware
+
  app.use(express.static(path.join(__dirname,"public")))
+
 
 
  //Middleware has a very important role..
